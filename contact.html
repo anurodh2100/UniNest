@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing styles -->
+    <title>Contact Us - UniNest</title>
+</head>
+<body>
+    <div class="main-container">
+    <div class="navbar">
+        <a href="index.html"><p>UniNest</p></a>
+        <div class="options">
+            <a href="index.html">Home</a>
+            <a href="#Features">Features</a>
+            <a href="#Services">Services</a>
+            <a href="#Testimonal">Testimonal</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Booking</a>
+        </div>
+        <a href="booking.html"><button >Join Us</button></a>
+    </div>
+
+    <main class="contact-form-container">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="hosteller">Are you a hosteller?</label>
+                    <select id="hosteller" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div id="hosteller-details" class="form-group" style="display: none;">
+                    <label for="campus">Campus:</label>
+                    <select id="campus" required>
+                        <option value="" disabled selected>Select a campus</option>
+                        <option value="campus-1">Campus 1</option>
+                        <option value="campus-2">Campus 2</option>
+                        <option value="campus-3">Campus 3</option>
+                        <option value="campus-4">Campus 4</option>
+                    </select>
+                
+                    <label for="room-type">Room Type:</label>
+                    <select id="room-type" required>
+                        <option value="" disabled selected>Select room type</option>
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="triple">Triple</option>
+                        <option value="other">Other</option>
+                    </select>
+                
+                    <div id="other-room-type" style="display: none;">
+                        <label for="other-type">Please specify:</label>
+                        <input type="text" id="other-type">
+                    </div>
+                
+                    <label for="room-no">Room No:</label>
+                    <input type="text" id="room-no">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <h2>UniNest</h2>
+            <div class="footer-links">
+                <a href="/about.html">About Us</a>
+                <a href="/Facilities.html">Facilities</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/faq.html">FAQ</a>
+            </div>
+            <p>&copy; 2024 UniNest. All Rights Reserved.</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/UniNest" target="_blank" aria-label="Facebook">
+                <img src="images/facebook-logo.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.twitter.com/UniNest" target="_blank" aria-label="Twitter">
+                <img src="images/twiter.png" alt="Twitter Logo">
+            </a>
+            <a href="https://www.instagram.com/UniNest" target="_blank" aria-label="Instagram">
+                <img src="images/insta-logo.jpg" alt="Instagram Logo">
+            </a>
+            <a href="https://www.linkedin.com/company/UniNest" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn Logo">
+            </a>
+        </div>
+    </footer>
+    
+    
+    </div>
+    <script src="contact.js"></script>
+</body>
+</html>

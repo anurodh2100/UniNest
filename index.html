@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="main-container">
     <div class="navbar">
-        <p>UniNest</p>
+        <a href="index.html"><p>UniNest</p></a>
             <div class="options">
-                <a href="#Home">Home</a>
+                <a href="index.html">Home</a>
                 <a href="#Features">Features</a>
-                <a href="#Services">Services</a>
-                <a href="#Testimonal">Testimonal</a>
-                <a href="#Contact">Contact</a>
+                <a href="#facilities">Facilities</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
             </div>
             <p id="st">Get Started</p>
-            <button id="join">Join Us</button>
+            <a href="booking.html"><button>Join Us</button></a>
     </div>
     <div class="main-">
         <div class="box1">
             <p class="p1">Elevate Your Hostel <br>Management <br> Experience</p>
             <p class="p2">Discover UniNest, the ultimate solution for seamless hostel <br>management, designed for efficiency and convenience. Explore our <br> features today! </p>
-            <button>Get Started Now <i class="fa-solid fa-arrow-right"></i></button>
+            <a href="booking.html"><button>Get Started Now <i class="fa-solid fa-arrow-right"></i></button></a>
         </div>
         <div class="box2">
             <img src="images/main.jpg" alt="">
@@ -131,7 +132,9 @@
                 <img id="map" src="images/icon-g.png" alt="">
                 <p>The management team is <br>incredibly helpful and responsive. <br>A great place to stay! </p>
             </div>
-            <button id="join">Join Our Community</button>
+        </div>
+        <button id="join">Join Our Community</button>
+        </div>
         </div>   
     </div>
     <div class="frame-details">
@@ -174,11 +177,100 @@
             <img src="images/img-13.png" alt="">
         </div>
     </div>
-    <div class="photos">
-        <h1>PHOTOS</h1>
-        <img src="" alt="">
-        <a href="">Show More</a>
-    </div>
+    <section id="facilities" class="facilities">
+        <h1>Facilities</h1>
+        <div class="facility-container">
+            <div class="facility-item">
+                <img src="images/facilities/clean.png" alt="Cleaning">
+                <p>Cleaning</p>
+            </div>
+            <div class="facility-item">
+                <img src="images/facilities/ro.jpeg" alt="R.O.">
+                <p>R.O.</p>
+            </div>
+            <div class="facility-item">
+                <img src="images/facilities/water-cooler.jpg" alt="Water Cooler">
+                <p>Water Cooler</p>
+            </div>
+            <div class="facility-item">
+                <img src="images/facilities/water-24.jpeg" alt="24*7 Water Supply">
+                <p>24*7 Water Supply</p>
+            </div>
+            <div class="facility-item">
+                <img src="images/facilities/furniture.png" alt="Fully Furnished">
+                <p>Fully Furnished</p>
+            </div>
+            <div class="facility-item">
+                <img src="images/facilities/cctv.jpg" alt="CCTV">
+                <p>CCTV</p>
+            </div>
+            <div class="facility-item">
+                <img src="images/facilities/wifi.png" alt="Wifi">
+                <p>Wifi</p>
+            </div>
+            <div class="facility-item">
+                <img src="images/facilities/security.jpg" alt="Fully Secured Campus">
+                <p>Fully Secured Campus</p>
+            </div>
+            <div class="facility-item">
+                <img src="images/facilities/washing.png" alt="Washing Machine">
+                <p>Washing Machine</p>
+            </div>
+            <div class="facility-item">
+                <img src="images/facilities/thali.jpg" alt="Washing Machine">
+                <p>Tasty Food</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="photo-gallery">
+        <h2>Photos</h2>
+        
+        <div class="gallery-grid">
+            <img src="images/hostel/img-1.jpeg" alt="Image 1" class="collage-image" onclick="openModal(this.src)">
+            <img src="images/hostel/img-2.jpeg" alt="Image 2" class="collage-image" onclick="openModal(this.src)">
+            <img src="images/hostel/img-3.jpeg" alt="Image 3" class="collage-image" onclick="openModal(this.src)">
+            <img src="images/hostel/img-4.jpeg" alt="Image 4" class="collage-image" onclick="openModal(this.src)">
+            <img src="images/hostel/img-5.jpeg" alt="Image 5" class="collage-image" onclick="openModal(this.src)">
+            <img src="images/hostel/img-6.jpeg" alt="Image 6" class="collage-image" onclick="openModal(this.src)">
+        </div>
+        
+        <button id="slideshowButton">Start Slideshow</button>
+      
+        <div class="slideshow-container" style="display:none;">
+            <button id="backToGallery" onclick="showGallery()">Back to Gallery</button>
+            <div class="mySlides fade">
+                <img src="images/hostel/img-1.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/hostel/img-2.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/hostel/img-3.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/hostel/img-4.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/hostel/img-5.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/hostel/img-6.jpeg" style="width:100%">
+            </div>
+        </div>
+        <div id="imageModal" class="modal" style="display:none;" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+        <div class="dots" style="display:none;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
     <div class="reg">
         <h1> Join Us Community Today </h1>
         <a href="booking.html"><button>Book Now</button></a>
@@ -205,7 +297,38 @@
             <button>Submit</button>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <h2>UniNest</h2>
+            <div class="footer-links">
+                <a href="/about.html">About Us</a>
+                <a href="/Facilities.html">Facilities</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/faq.html">FAQ</a>
+            </div>
+            <p>&copy; 2024 UniNest. All Rights Reserved.</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com/UniNest" target="_blank" aria-label="Facebook">
+                <img src="images/facebook-logo.png" alt="Facebook Logo">
+            </a>
+            <a href="https://www.twitter.com/UniNest" target="_blank" aria-label="Twitter">
+                <img src="images/twiter.png" alt="Twitter Logo">
+            </a>
+            <a href="https://www.instagram.com/UniNest" target="_blank" aria-label="Instagram">
+                <img src="images/insta-logo.jpg" alt="Instagram Logo">
+            </a>
+            <a href="https://www.linkedin.com/company/UniNest" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin.png" alt="LinkedIn Logo">
+            </a>
+        </div>
+    </footer>
 
+</div>
+    
+    
+    
 
+    <script src="script.js"></script>
 </body>
 </html>

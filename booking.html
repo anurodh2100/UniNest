@@ -3,48 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniNest- booking</title>
     <link rel="stylesheet" href="booking.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"> <!-- Link to your existing styles -->
+    <title>Booking - UniNest</title>
 </head>
 <body>
+    <div class="main-container">
     <div class="navbar">
         <a href="index.html"><p>UniNest</p></a>
-            <div class="options">
-                <a href="index.html">Home</a>
-                <a href="#Features">Features</a>
-                <a href="#Services">Services</a>
-                <a href="#Testimonal">Testimonal</a>
-                <a href="#Contact">Contact</a>
+        <div class="options">
+            <a href="index.html">Home</a>
+            <a href="#Features">Features</a>
+            <a href="#Services">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Booking</a>
+        </div>
+        <a href="booking.html"><button>Join Us</button></a>
+    </div>
+
+    <main class="booking-container">
+        <h1>Booking</h1>
+        
+        <div class="campus-selection">
+            <label for="campus">Select Campus:</label>
+            <select id="campus">
+                <option value="" disabled selected>Select a campus</option>
+                <option value="campus-1">Campus 1</option>
+                <option value="campus-2">Campus 2</option>
+                <option value="campus-3">Campus 3</option>
+                <option value="campus-4">Campus 4</option>
+            </select>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <img src="images/booking/img-1.jpg" alt="Slide 1">
             </div>
-            <p id="st">Get Started</p>
-            <button id="join">Join Us</button>
-    </div>
-    <div class="booking">
-        <H1>BOOKING</H1>
-        <H2>PAGE UNDER CONSTRUCTION !!</H2>
-    </div>
-    <div class="bar--">
-        <div class="frame-1">
-            <p id="l-1">Get in Touch With Us</p>
-            <h1>Contact Us Now</h1>
-            <p id="detl">We'd love to hear from you all.</p>
-            <p><i class="fa-solid fa-envelopes-bulk"></i>  exmple@UniNest.com</p>
-            <p><i class="fa-solid fa-phone"></i>  +91 9xxxX XxxxX</p>
-            <p><i class="fa-solid fa-location-dot"></i> Pigdambar Rau , Indore MP</p>
+            <div class="slides fade">
+                <img src="images/booking/img-2.png" alt="Slide 1">
+            </div>
+            <div class="slides fade">
+                <img src="images/booking/img-3.jpg" alt="Slide 1">
+            </div>
+            <div class="slides fade">
+                <img src="images/booking/img-4.jpg" alt="Slide 1">
+            </div>
+            <div class="slides fade">
+                <img src="images/booking/img-5.png" alt="Slide 1">
+            </div>
+
+            
         </div>
-        <div class="frame-2">
-            <p>First name</p>
-            <input id="entry" type="text" placeholder="First Name" id="">
-            <p>Email</p>
-            <input id="entry" type="text" placeholder="Email" id="">
-            <p>Message</p>
-            <input id="entry-msg" type="text" placeholder="" id="">
-            <input id="check" type="checkbox"> <p id = "jul">I accept the terms </p>
-            <button>Submit</button>
+
+        <div class="container">
+            <div class="fee-structure">
+                <h2>Fee Structure</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Particular</th>
+                            <th>Fees</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Registration Fees</td>
+                            <td>₹</td>
+                            <td>Non-refundable</td>
+                        </tr>
+                        <tr>
+                            <td>Caution Money</td>
+                            <td>₹</td>
+                            <td>Refundable</td>
+                        </tr>
+                        <tr>
+                            <td>Single Seater</td>
+                            <td>₹</td>
+                            <td>Per Bed Room Charges</td>
+                        </tr>
+                        <tr>
+                            <td>Double Seater</td>
+                            <td>₹</td>
+                            <td>Per Bed Room Charges</td>
+                        </tr>
+                        <tr>
+                            <td>Three Seater</td>
+                            <td>₹</td>
+                            <td>Per Bed Room Charges</td>
+                        </tr>
+                        <tr>
+                            <td>Other</td>
+                            <td>₹   </td>
+                            <td>Contact for details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="download-btn">Download PDF</button>
+            </div>
+            
+            <div class="booking-form">
+                <h2>Booking Form</h2>
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                  
+                    <div class="form-group age-gender-container">
+                        <label>Gender:</label>
+                        <div class="gender-options">
+                            <label>
+                                <input type="radio" name="gender" value="M" required> Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="F" required> Female
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="Other" required> Other
+                            </label>
+                        </div>
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="father-name">Father's Name:</label>
+                        <input type="text" id="father-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile No:</label>
+                        <input type="tel" id="mobile" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="institute">Institute Name:</label>
+                        <input type="text" id="institute" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="room-type">Room Type:</label>
+                        <select id="room-type" required>
+                            <option value="" disabled selected>Select room type</option>
+                            <option value="single">Single</option>
+                            <option value="double">Double</option>
+                            <option value="triple">Triple</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="other-info">Other Information:</label>
+                        <textarea id="other-info" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            
         </div>
+        
+        
+
+        <footer class="footer">
+            <div class="footer-container">
+                <h2>UniNest</h2>
+                <div class="footer-links">
+                    <a href="/about.html">About Us</a>
+                    <a href="/Facilities.html">Facilities</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="/faq.html">FAQ</a>
+                </div>
+                <p>&copy; 2024 UniNest. All Rights Reserved.</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/UniNest" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook-logo.png" alt="Facebook Logo">
+                </a>
+                <a href="https://www.twitter.com/UniNest" target="_blank" aria-label="Twitter">
+                    <img src="images/twiter.png" alt="Twitter Logo">
+                </a>
+                <a href="https://www.instagram.com/UniNest" target="_blank" aria-label="Instagram">
+                    <img src="images/insta-logo.jpg" alt="Instagram Logo">
+                </a>
+                <a href="https://www.linkedin.com/company/UniNest" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkedin.png" alt="LinkedIn Logo">
+                </a>
+            </div>
+        </footer>
     </div>
 
-
+    <script src="booking.js"></script>
 </body>
 </html>
